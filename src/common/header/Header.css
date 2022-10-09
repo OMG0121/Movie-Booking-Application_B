@@ -1,20 +1,29 @@
-.header {
+.header{
     background-color: #222;
-    height: 36px;
-    padding: 8px 32px 8px 16px;
-    display: flex;
+    height :   36px;
+    width : 100%;
+    padding : 8px 32px 8px 16px;
+    display : flex;
     justify-content: space-between;
 }
 
-@keyframes imgAnimation {
-    25% {transform: rotate(90deg);}
-    50% {transform: rotate(180deg);}
-    75% {transform: rotate(270deg);}
-    100% {transform: rotate(360deg);}
+.headerBtn {
+    visibility: hidden;
+
 }
 
-#logo-img {
+.logo {
     background-color: #ff7f7f;
-    height: 35px;
-    animation: imgAnimation 8s linear infinite;
+    height : 35px;
+    animation-name: logoAni;
+    animation: rotation 8s infinite linear;
+    justify-content: left;
 }
+@keyframes rotation {
+    from {
+        transform: rotateY(0deg);
+      }
+      to {
+        transform: rotateY(360deg);
+      }
+  }

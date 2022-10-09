@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { Component } from  'react';
 import './Header.css';
-import logo from '../../assets/logo.svg';
-import Button from '@material-ui/core/Button';
+import { ReactComponent as Logo} from '../../assets/logo.svg'
 
-const Header = function(props) {
-    return (
-        <div className="header">
-            <img src={logo} alt="logo-img" id="logo-img"/>
-            <Button variant="contained" color="primary" id="btn">{props.btnName}</Button>
-        </div>
-    )
+class Header extends Component{
+    render(){
+        return(
+            <div className='header'>
+                    <Logo className='logo'/>
+            </div>
+        )
+
+    }
 }
 
 export default Header;
