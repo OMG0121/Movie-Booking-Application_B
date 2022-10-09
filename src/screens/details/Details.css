@@ -1,0 +1,30 @@
+#back-btn {
+    margin-left: 24px;
+    margin-top: 8px;
+    height: 24px;
+}
+
+.details-container {
+    display: flex;
+}
+
+.details-left {
+    width: 20%;
+    margin: 15px;
+}
+
+.details-middle {
+    width: 60%;
+}
+
+.details-right {
+    width: 20%;
+}
+
+#detail-movie-poster {
+    width: 100%;
+}
+
+#details-trailer-text, #details-trailer-text, #artist-topography {
+    margin-top: 16px;
+}
